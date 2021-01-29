@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		99FE92CB25C403B200B027D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92CA25C403B200B027D7 /* main.swift */; };
+		99FE92D525C4047700B027D7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92D425C4047700B027D7 /* LinkedList.swift */; };
+		99FE92DF25C40A2D00B027D7 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */; };
+		99FE92E625C40A7200B027D7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92D425C4047700B027D7 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		99FE92C725C403B200B027D7 /* SwiftDataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FE92CA25C403B200B027D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99FE92D425C4047700B027D7 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		99FE92DC25C40A2D00B027D7 /* LinkedListTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		99FE92E025C40A2D00B027D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		99FE92C425C403B200B027D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FE92D925C40A2D00B027D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				99FE92C925C403B200B027D7 /* SwiftDataStructure */,
+				99FE92DD25C40A2D00B027D7 /* LinkedListTest */,
 				99FE92C825C403B200B027D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				99FE92C725C403B200B027D7 /* SwiftDataStructure */,
+				99FE92DC25C40A2D00B027D7 /* LinkedListTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +73,27 @@
 		99FE92C925C403B200B027D7 /* SwiftDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				99FE92D325C4046200B027D7 /* LinkedList */,
 				99FE92CA25C403B200B027D7 /* main.swift */,
 			);
 			path = SwiftDataStructure;
+			sourceTree = "<group>";
+		};
+		99FE92D325C4046200B027D7 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				99FE92D425C4047700B027D7 /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		99FE92DD25C40A2D00B027D7 /* LinkedListTest */ = {
+			isa = PBXGroup;
+			children = (
+				99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */,
+				99FE92E025C40A2D00B027D7 /* Info.plist */,
+			);
+			path = LinkedListTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = 99FE92C725C403B200B027D7 /* SwiftDataStructure */;
 			productType = "com.apple.product-type.tool";
 		};
+		99FE92DB25C40A2D00B027D7 /* LinkedListTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FE92E125C40A2D00B027D7 /* Build configuration list for PBXNativeTarget "LinkedListTest" */;
+			buildPhases = (
+				99FE92D825C40A2D00B027D7 /* Sources */,
+				99FE92D925C40A2D00B027D7 /* Frameworks */,
+				99FE92DA25C40A2D00B027D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedListTest;
+			productName = LinkedListTest;
+			productReference = 99FE92DC25C40A2D00B027D7 /* LinkedListTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +143,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					99FE92C625C403B200B027D7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					99FE92DB25C40A2D00B027D7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -110,16 +164,37 @@
 			projectRoot = "";
 			targets = (
 				99FE92C625C403B200B027D7 /* SwiftDataStructure */,
+				99FE92DB25C40A2D00B027D7 /* LinkedListTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99FE92DA25C40A2D00B027D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99FE92C325C403B200B027D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FE92D525C4047700B027D7 /* LinkedList.swift in Sources */,
 				99FE92CB25C403B200B027D7 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FE92D825C40A2D00B027D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FE92E625C40A7200B027D7 /* LinkedList.swift in Sources */,
+				99FE92DF25C40A2D00B027D7 /* LinkedListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +338,42 @@
 			};
 			name = Release;
 		};
+		99FE92E225C40A2D00B027D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4WL559DRW9;
+				INFOPLIST_FILE = LinkedListTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hwi.LinkedListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		99FE92E325C40A2D00B027D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4WL559DRW9;
+				INFOPLIST_FILE = LinkedListTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hwi.LinkedListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +391,15 @@
 			buildConfigurations = (
 				99FE92CF25C403B200B027D7 /* Debug */,
 				99FE92D025C403B200B027D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FE92E125C40A2D00B027D7 /* Build configuration list for PBXNativeTarget "LinkedListTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FE92E225C40A2D00B027D7 /* Debug */,
+				99FE92E325C40A2D00B027D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
