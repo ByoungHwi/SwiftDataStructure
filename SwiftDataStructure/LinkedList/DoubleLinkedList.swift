@@ -106,6 +106,28 @@ class DoubleLinkedList<T: Equatable> {
         }
     }
     
+    func removeFirst() {
+        _count -= 1
+        head?.right?.left = nil
+        head = head?.right
+        
+        if tail?.left == nil {
+            _count = 0
+            tail = nil
+        }
+    }
+    
+    func removeLast() {
+        _count -= 1
+        tail?.left?.right = nil
+        tail = tail?.left
+        
+        if head?.right == nil {
+            _count = 0
+            head = nil
+        }
+    }
+    
     func contains(_ element: T) -> Bool {
        
         var _contains = false

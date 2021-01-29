@@ -38,6 +38,16 @@
                ReferencedContainer = "container:SwiftDataStructure.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "99FE92FC25C4569D00B027D7"
+               BuildableName = "StackTest.xctest"
+               BlueprintName = "StackTest"
+               ReferencedContainer = "container:SwiftDataStructure.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
