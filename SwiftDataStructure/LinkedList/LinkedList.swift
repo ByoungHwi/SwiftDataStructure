@@ -34,15 +34,14 @@ class LinkedList<T: Equatable> {
         head == nil
     }
     
+    private var _count: Int = 0
     var count: Int {
-        var _count = 0
-        traversal { _ in
-            _count += 1
-        }
-        return _count
+        _count
     }
     
     func insert(_ element: T) {
+        
+        _count += 1
         
         let newNode = Node(element)
         
@@ -75,6 +74,7 @@ class LinkedList<T: Equatable> {
         while deleteNode != nil {
             if deleteNode?.element == element {
                 frontNode?.next = deleteNode?.next
+                _count -= 1
                 break
             }
             frontNode = deleteNode

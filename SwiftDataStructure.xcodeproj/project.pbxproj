@@ -11,6 +11,9 @@
 		99FE92D525C4047700B027D7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92D425C4047700B027D7 /* LinkedList.swift */; };
 		99FE92DF25C40A2D00B027D7 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */; };
 		99FE92E625C40A7200B027D7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92D425C4047700B027D7 /* LinkedList.swift */; };
+		99FE92EA25C41A4C00B027D7 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92E925C41A4C00B027D7 /* DoubleLinkedList.swift */; };
+		99FE92EE25C41E2E00B027D7 /* DoubleLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92ED25C41E2E00B027D7 /* DoubleLinkedListTest.swift */; };
+		99FE92F125C41E9200B027D7 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE92E925C41A4C00B027D7 /* DoubleLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,8 @@
 		99FE92DC25C40A2D00B027D7 /* LinkedListTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		99FE92E025C40A2D00B027D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FE92E925C41A4C00B027D7 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
+		99FE92ED25C41E2E00B027D7 /* DoubleLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedListTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				99FE92D425C4047700B027D7 /* LinkedList.swift */,
+				99FE92E925C41A4C00B027D7 /* DoubleLinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				99FE92DE25C40A2D00B027D7 /* LinkedListTest.swift */,
+				99FE92ED25C41E2E00B027D7 /* DoubleLinkedListTest.swift */,
 				99FE92E025C40A2D00B027D7 /* Info.plist */,
 			);
 			path = LinkedListTest;
@@ -185,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99FE92D525C4047700B027D7 /* LinkedList.swift in Sources */,
+				99FE92EA25C41A4C00B027D7 /* DoubleLinkedList.swift in Sources */,
 				99FE92CB25C403B200B027D7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FE92EE25C41E2E00B027D7 /* DoubleLinkedListTest.swift in Sources */,
 				99FE92E625C40A7200B027D7 /* LinkedList.swift in Sources */,
 				99FE92DF25C40A2D00B027D7 /* LinkedListTest.swift in Sources */,
+				99FE92F125C41E9200B027D7 /* DoubleLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
